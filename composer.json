@@ -1,0 +1,48 @@
+{
+    "name": "alexjoffroy/ignition-github-issues-tab",
+    "description": "An Ignition tab to search acrosse GitHub issues",
+    "keywords": [
+        "laravel",
+        "flare",
+        "ignition"
+    ],
+    "homepage": "https://github.com/alexjoffroy/ignition-github-issues-tab",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Joffroy",
+            "email": "contact@alexjoffroy.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "facade/ignition": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlexJoffroy\\GithubIssuesTab\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlexJoffroy\\GithubIssuesTab\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlexJoffroy\\GithubIssuesTab\\TabServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
